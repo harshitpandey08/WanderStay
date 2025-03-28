@@ -1,19 +1,20 @@
 import React from 'react';
 import '../style/home.css';
 
-import {Container , Row, Col} from 'reactstrap';
+import { Col, Container, Row } from 'reactstrap';
+import experience from '../assets/images/experience.png';
 import heroImg from '../assets/images/hero-img01.jpg';
 import heroImg02 from '../assets/images/hero-img02.jpg';
 import heroVideo from '../assets/images/hero-video.mp4';
 import worldImg from '../assets/images/world.png';
-import experience from '../assets/images/experience.png'
 
 import Subtitle from '../shared/Subtitle';
 
 
-import SearchBar from '../shared/SearchBar';
-import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
+import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
+import ServiceList from '../services/ServiceList';
+import SearchBar from '../shared/SearchBar';
 
 const Home = () => {
   return (
@@ -125,6 +126,38 @@ const Home = () => {
         </Container>
       </section>
       {/*================ Experience section end ================= */}
+
+      {/*================ gallery section end ================= */}
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Gallery"}/>
+              <h2 className='gallery_title'>Visit our customers tour gallery</h2>
+            </Col>
+            <Col lg="12">
+              <MasonryImagesGallery/>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/*================ gallery section end ================= */}
+
+      {/*================ Tesinomial section end ================= */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={'Fans Love'}/>
+              <h2 className="tesinomial__title">What our fans say about us</h2>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/*================ Tesinomial section end ================= */}
     </>
   );
 };

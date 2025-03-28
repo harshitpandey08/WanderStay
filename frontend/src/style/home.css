@@ -96,5 +96,18 @@
   width: 90%;
 }
 
+.gallery_title{
+  font-style: 2.3rem;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+
+.masonry__img {
+  transition: 0.3s;
+}
+
+.masonry__img:hover {
+  transform: scale(1.1);
+}
 
 
