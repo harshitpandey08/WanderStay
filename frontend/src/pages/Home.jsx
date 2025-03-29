@@ -15,6 +15,10 @@ import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
 import ServiceList from '../services/ServiceList';
 import SearchBar from '../shared/SearchBar';
+import Testimonials from '../components/Testinomial/Testimonials';
+import Newsletter from '../shared/Newsletter';
+
+
 
 const Home = () => {
   return (
@@ -151,13 +155,16 @@ const Home = () => {
           <Row>
             <Col lg="12">
               <Subtitle subtitle={'Fans Love'}/>
-              <h2 className="tesinomial__title">What our fans say about us</h2>
+              <h2 className="testimonial__title">What our fans say about us</h2>
+            </Col>
+            <Col lg="12">
+              <Testimonials/>
             </Col>
           </Row>
         </Container>
       </section>
-
       {/*================ Tesinomial section end ================= */}
+      <Newsletter/>
     </>
   );
 };
