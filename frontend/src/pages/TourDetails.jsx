@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react';
-import '../style/tour-details.css';
-import { Container, Row, Col, Form, ListGroup } from 'reactstrap';
 import { useParams } from 'react-router-dom';
+import { Col, Container, Form, ListGroup, Row } from 'reactstrap';
 import tourData from '../assets/data/tours';
-import calculateAvgRating from '../utils/avgRating';
 import avatar from '../assets/images/avatar.jpg';
+import Booking from '../components/Booking/Booking';
+import '../style/tour-details.css';
+import calculateAvgRating from '../utils/avgRating';
 
 const TourDetails = () => {
 
@@ -48,7 +49,7 @@ const TourDetails = () => {
 
                 <span className="tour__rating d-flex align-items-center gap-1">
                   <i class="ri-star-fill" style={{color: "var(--secondary-color)"}}></i> 
-                    {calculateAvgRating===0 ? null : avgRating}
+                    {avgRating ===0 ? null : avgRating}
                     {totalRating === 0 ? (
                     "Not Rated"
                      ) : (
@@ -145,8 +146,9 @@ const TourDetails = () => {
           </Col>
 
           <Col lg="4">
-            
+            <Booking tour={tour} avgRating= {avgRating}  />
           </Col>
+          
         </Row>
       </Container>
     </section>
