@@ -65,8 +65,13 @@ export const login = async (req, res) => {
       expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000), // Corrected expiration
     })
       .status(200)
-      .json({ success: true, message: "Successfully logged in", data: { ...rest } }); 
-
+      .json({ 
+        success: true, 
+        message: "Successfully logged in", 
+        token, 
+        data: { ...rest },
+        role,
+      }); 
   } catch (error) {
     res.status(500).json({
       success: false,
