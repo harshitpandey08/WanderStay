@@ -1,15 +1,12 @@
 
-```markdown
 # 🏕️ WanderStay
 
-**WanderStay** is a full-stack MERN (MongoDB, Express.js, React, Node.js)
-application that enables users to discover, book, and manage stays across the world.
- WanderStay focuses on providing a smooth, modern UI and user-friendly
-experience for both travelers and hosts — with its own unique twist.
+**WanderStay** is a full-stack MERN (MongoDB, Express.js, React, Node.js) application that enables users to discover, book, and manage stays across the world.  
+WanderStay focuses on providing a smooth, modern UI and user-friendly experience for both travelers and hosts — with its own unique twist.
 
 ---
 
-## 🚀 Features
+### 🚀 Features
 
 - 🔐 **User Authentication** (Login / Register)
 - 🏡 **List & Book Stays**
@@ -18,9 +15,9 @@ experience for both travelers and hosts — with its own unique twist.
 - 💬 **User Reviews & Ratings**
 - ❤️ **Wishlist & Favorites**
 - 📆 **Date-based Availability**
-- 🧭 **Modern UI with Responsive Design**
-- 🧠 **Custom Hooks & Context API for State Management**
-- 📦 **RESTful API Integration**
+- 🎨 **Modern UI with Responsive Design**
+- ⚡ **Custom Hooks & Context API for State Management**
+- 🔗 **RESTful API Integration**
 
 ---
 
@@ -86,4 +83,3 @@ JWT_SECRET=your_jwt_secret
 
 Built with ❤️ by **[Harshit Pandey](mailto:harshitpandey0810@gmail.com)**  
 🔗 GitHub: [harshitpandey08](https://github.com/harshitpandey08)
-```
